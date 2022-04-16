@@ -1128,9 +1128,9 @@ int hitbind_force_to_cpu_handler(struct sk_buff *skb, struct foe_entry *entry)
 int hitbind_force_mcast_to_wifi_handler(struct sk_buff *skb)
 {
 #if defined(CONFIG_RA_HW_NAT_WIFI) || defined(CONFIG_RA_HW_NAT_NIC_USB)
-#if !defined(CONFIG_RA_HW_NAT_NIC_USB)
+//#if !defined(CONFIG_RA_HW_NAT_NIC_USB)
 	int i = 0;
-#endif
+//#endif
 	struct sk_buff *skb2;
 
 #if !defined(CONFIG_RAETH_GMAC2)
